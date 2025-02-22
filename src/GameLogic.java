@@ -48,7 +48,7 @@ public class GameLogic {
             System.out.println(getResults);
 
             String playAgain = LocalUtil.getInput("\n Want to play again? ( Y/N )");
-            // Note: if it s a N ( No ) it will return an empty string
+            // Note: if user enters an N ( No ) it will return an empty string
             if ( !playAgain.equals("Y") ) {
                 gameStatus = 3;
             }
