@@ -58,4 +58,12 @@ public class GameLogic {
 
         return gameStatus;
     }
+
+    public static String[] RunGame_v2(int playerInt) {
+        String ComputerChoice = gameOptions[new Random().nextInt(gameOptions.length)];
+        String UserChoice = gameOptions[playerInt];
+        String getResults = LocalUtil.checkResults(ComputerChoice, UserChoice);
+
+        return new String[]{ComputerChoice, UserChoice, getResults};
+    }
 }
