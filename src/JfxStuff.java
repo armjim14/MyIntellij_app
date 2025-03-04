@@ -44,6 +44,7 @@ public class JfxStuff extends Application {
         r.getChildren().add(PaperButton);
         r.getChildren().add(ScissorsButton);
 
+        // find a better layout to label underneath buttons
         r.getChildren().add(lb);
 
         Scene sc = new Scene(r, 300, 300);
