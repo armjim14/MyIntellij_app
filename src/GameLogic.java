@@ -13,6 +13,7 @@ public class GameLogic {
         String ComputerChoice = gameOptions[new Random().nextInt(gameOptions.length)];
         String userChoice = gameOptions[action];
 
+        // returning results of the game
         return LocalUtil.checkResults(ComputerChoice, userChoice);
     }
 }
