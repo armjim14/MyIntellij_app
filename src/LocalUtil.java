@@ -5,6 +5,7 @@ import java.io.IOException;
 public class LocalUtil {
 
     public static String checkResults(String c, String p) {
+        // if both choices are the same, tied game
         if ( c.equals(p) ) {
             return "Tied Game";
         }
