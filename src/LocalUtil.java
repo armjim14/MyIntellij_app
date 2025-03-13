@@ -31,6 +31,7 @@ public class LocalUtil {
         }
     }
 
+    // A simple logging method to a local file
     public static void writeToFile(String str) {
         String fileName = "C:\\Users\\ajime\\OneDrive\\Documents\\CodeLogger\\log.txt";
 
