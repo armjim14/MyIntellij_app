@@ -5,30 +5,37 @@ import java.io.IOException;
 public class LocalUtil {
 
     public static String checkResults(String c, String p) {
+
+        String theResults;
+
         // if both choices are the same, tied game
         if ( c.equals(p) ) {
-            return "Tied Game";
+            theResults = "Tied Game";
         }
 
         if ( c.equals("R") ) {
             if ( p.equals("P") ) {
-                return "You Win!";
+                theResults = "You Win!";
             } else {
-                return "You Lost!";
+                theResults = "You Lost!";
             }
         } else if ( c.equals("P") ) {
             if ( p.equals("S") ) {
-                return "You Win!";
+                theResults = "You Win!";
             } else {
-                return "You Lost!";
+                theResults = "You Lost!";
             }
         } else {
             if ( p.equals("R") ) {
-                return "You Win!";
+                theResults = "You Win!";
             } else {
-                return "You Lost!";
+                theResults = "You Lost!";
             }
         }
+
+        theResults = "\n\n" + theResults;
+
+        return theResults;
     }
 
     // A simple logging method to a local file
